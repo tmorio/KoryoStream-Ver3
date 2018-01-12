@@ -1,0 +1,33 @@
+#photoa img{
+   overflow: hidden;
+    width:auto;
+    height:auto;
+    max-width:100%;
+    min-height:150px;
+    max-height:150px;
+}
+
+#photob img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    min-height:150px;
+    max-height:150px;
+
+}
+
+#photousera img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    min-height:50px;
+    max-height:50px;
+}
+
+#photouserb img{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    min-height:50px;
+    max-height:50px;
+}

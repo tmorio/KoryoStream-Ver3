@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KoryoTwi Admin Tool</title>
+    <link rel="stylesheet" type="text/css" href="admintool.css">
+<script type="text/javascript" src="prototype.js"></script>
+  <script type="text/javascript">
+      new Ajax.PeriodicalUpdater(
+        'itema',
+        'id3.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+      new Ajax.PeriodicalUpdater(
+        'itemb',
+        'id4.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+      new Ajax.PeriodicalUpdater(
+        'itemc',
+        'id5.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+      new Ajax.PeriodicalUpdater(
+        'itemd',
+        'id6.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+      new Ajax.PeriodicalUpdater(
+        'iteme',
+        'id7.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+      new Ajax.PeriodicalUpdater(
+        'itemf',
+        'id8.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+      new Ajax.PeriodicalUpdater(
+        'photoa',
+        'phid1.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+      new Ajax.PeriodicalUpdater(
+        'photob',
+        'phid2.html',
+        {
+          method: 'get',
+          frequency: 10,
+        }
+      )
+    </script>
+  </head>
+  <body>
+<font face="sans-serif">
+<h1>KoryoSaR-v3 Admin Tool</h1>
+<form action="set.php" method="post">
+	<p>ヘッダー設定<br>
+	<textarea name="data" cols="70" rows="5"></textarea></p>
+	<input type="submit" value="登録する" style="margin:0px; float:left;">
+	</form><br><hr>
+<p>DB上のツイート</p>
+<form action="set-delph.php" method="post">
+        <button type="submit" name="ph" value="1">PHID-1消去</button><br>
+        <span id="photoa"></span>
+      <hr>
+        <button type="submit" name="ph" value="2">PHID-2消去</button><br>
+        <span id="photob"></span>
+       <hr></form>
+<form action="set-delid.php" method="post">       
+        <button type="submit" name="nr" value="3">ID-3消去</button>
+      	<span id="itema"></span>
+      <hr>
+        <button type="submit" name="nr" value="4">ID-4消去</button>
+        <span id="itemb"></span>
+      <hr>
+        <button type="submit" name="nr" value="5">ID-5消去</button>
+        <span id="itemc"></span>
+      <hr>
+        <button type="submit" name="nr" value="6">ID-6消去</button>
+        <span id="itemd"></span>
+      <hr>
+        <button type="submit" name="nr" value="7">ID-7消去</button>
+        <span id="iteme"></span>
+      <hr>
+        <button type="submit" name="nr" value="8">ID-8消去</button>
+        <span id="itemf"></span>
+      <hr>
+</form>
+
+
+  </body>
+</html>
+

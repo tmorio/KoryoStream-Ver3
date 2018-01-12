@@ -1,0 +1,17 @@
+
+.sn  {
+  color:#000;
+  font-family:sans-serif;
+  font-size: 100%;
+  margin:0;
+  display:inline-block;
+  white-space:nowrap;
+  text-align: left;
+  float: left;
+}
+
+.right  {
+  text-align: right;
+  float: right;
+}
+
