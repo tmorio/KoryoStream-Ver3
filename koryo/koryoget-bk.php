@@ -48,6 +48,7 @@ class FilterTrackConsumer extends OauthPhirehose
         }
 
         $result = str_replace($cmd, '', $result);
+	$result = htmlentities($result, ENT_QUOTES, 'UTF-8');
 
 
 foreach ($nguser as $wordu)
